@@ -4,8 +4,8 @@
     --color-secondary: #F6CF57;
     --color-tertiary: #e92929;
     --color-text: #ffffff;
-    
-    font-size: 50%; 
+
+    font-size: 62.5%;
 }
 
 * {
@@ -16,6 +16,11 @@
 }
 
 body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
     position: relative;
     background-color: var(--color-primary);
     font-family: 'Roboto', sans-serif;
@@ -26,7 +31,7 @@ body {
     margin: auto;
 }
 
-footer{
+footer {
     position: absolute;
     height: 25px;
     border-top: 1px solid var(--color-secondary);
@@ -35,7 +40,7 @@ footer{
     width: 100%;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,51 +49,51 @@ header{
     margin: 5px 0 10px 0;
 }
 
-header img{
+header img {
     width: 3rem;
     height: 3rem;
     margin: 0 5px;
 }
 
-h1{
+h1 {
     color: var(--color-text);
     font-size: 3.6rem;
     line-height: 121%;
     margin: 0 5px;
 }
 
-h2{
+h2 {
     color: var(--color-text);
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     line-height: 121%;
     margin-bottom: 10px;
 }
 
-p{
+p {
     color: var(--color-text);
     font-size: 1.5rem;
     line-height: 121%;
 }
 
-figcaption{
+span {
     color: var(--color-text);
     font-size: 1rem;
     margin-bottom: 5px;
 }
 
-.cards-section{
+.cards-section {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    
+
     width: 100%;
     padding: 10px;
     margin: 10px 0;
     overflow: hidden;
 }
 
-.cards-container{
+.cards-container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -97,7 +102,7 @@ figcaption{
     width: 100%;
 }
 
-.cards-container div{
+.cards-container div {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -111,7 +116,7 @@ figcaption{
 
 }
 
-.cards-container figure{
+.cards-container figure {
     position: relative;
     overflow: hidden;
     width: 250px;
@@ -120,83 +125,76 @@ figcaption{
     border-radius: 30px;
 }
 
-.cards-container img{
+.cards-container img {
     width: 100%;
     position: absolute;
     right: 0;
     bottom: 0;
 }
 
-.cards-container p{
+.cards-container p {
     width: 80%;
 }
 
 @media (min-width:480px) {
-    :root{
+    :root {
         font-size: 70%;
     }
 
-    p{
-        font-size: 1rem;
-    }
-
-    .cards-container p{
-        width: 80%;
-    }
 }
 
-@media (min-width:600px) { 
-   :root{
+@media (min-width:600px) {
+    :root {
         font-size: 80%;
     }
 
-    .cards-container div{
+    .cards-container div {
         width: 300px;
         margin: 20px;
     }
-
 }
 
 @media (min-width:801px) {
-   :root{
+    :root {
         font-size: 90%;
-   }
+    }
 
-   .cards-container p{
+    span {
+        font-size: .9rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+
+    .cards-container p {
         width: 75%;
     }
 }
 
 @media (min-width:1021px) {
-   :root{
+    :root {
         font-size: 100%;
     }
 
-    .cards-container div{
+    .cards-container div {
         width: 320px;
     }
 }
 
-@media(min-width: 1440px){
-    .cards-container figure{
+@media(min-width: 1440px) {
+    .cards-container figure {
         width: 300px;
         height: 200px;
     }
 
-    .cards-container div{
+    .cards-container div {
         width: 350px;
     }
 }
 
 @media (min-width:2200px) {
-   :root{
-        font-size: 120%;
-    }
-
-    body{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+    :root {
+        font-size: 110%;
     }
 }
